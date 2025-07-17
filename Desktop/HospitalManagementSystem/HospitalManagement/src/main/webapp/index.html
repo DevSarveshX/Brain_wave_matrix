@@ -1,0 +1,81 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%
+    String username = (String) session.getAttribute("username");
+    if(username == null) {
+        response.sendRedirect("Login.jsp");
+        return;
+    }
+%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome | Sarvesh's Hospital</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #d9f1ff, #f0fff4); /* soft hospital-friendly colors */
+            color: #333;
+        }
+
+        header {
+            background-color: #0f8b8d; /* teal */
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+        }
+
+        header h2 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0f8b8d;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 14px 25px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #136c72;
+        }
+
+        main {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        main p {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>WELCOME TO SARVESH'S HOSPITAL</h2>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Patient.jsp">Patient</a>
+        <a href="ViewEHR.jsp">EHR</a>
+        <a href="Inventory.jsp">Inventory</a>
+        <a href="Staff.jsp">Staff</a>
+        <a href="logout">Logout</a>
+    </nav>
+
+    <main>
+        <p>Your health is our priority. Navigate using the menu above.</p>
+    </main>
+</body>
+</html>
