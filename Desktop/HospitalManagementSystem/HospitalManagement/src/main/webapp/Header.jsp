@@ -37,7 +37,7 @@
 </header>
 
 <nav>
-    <a href="index.html">Home</a>
+    <a href="index.jsp">Home</a>
     <a href="Patient.jsp">Patient</a>
     <a href="ViewAppointments.jsp">Appointments</a>
     <a href="Inventory.jsp">Inventory</a>

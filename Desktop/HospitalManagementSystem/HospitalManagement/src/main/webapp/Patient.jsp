@@ -163,7 +163,7 @@
 </header>
 
 <nav>
-    <a href="index.html">Home</a>
+    <a href="index.jsp">Home</a>
     <a href="ViewAppointments.jsp">Appointments</a>
     <a href="ViewEHR.jsp">EHR</a>
     <a href="Inventory.jsp">Inventory</a>
